@@ -497,7 +497,9 @@ span {
     font-weight: 400;
     line-height: 51px;
 }
-
+.contacts-form h3 {
+    display: none;
+}
 .contacts-form form {
     padding: 30px;
     background-color: rgba(2, 22, 35, 0.71);
