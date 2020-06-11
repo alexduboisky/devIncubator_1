@@ -43,8 +43,8 @@ span {
 }
 
 /* Main */
-/* Title */
-.title {
+/* First screen */
+.first-screen {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,13 +53,13 @@ span {
     opacity: 0.99;
 }
 
-.title-row {
+.first-screen .title {
     margin-top: 200px;
     text-align: center;
     position: relative;
 }
 
-.title-row h1 {
+.first-screen .title h1 {
     text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
     color: #505050;
     font-family: Montserrat;
@@ -73,7 +73,7 @@ span {
     z-index: 2;
 }
 
-.title-row h1::before {
+.first-screen .title h1::before {
     content: "";
     position: absolute;
     width: 255px;
@@ -84,7 +84,7 @@ span {
     z-index: -2;
 }
 
-.title-row h1::after {
+.first-screen .title h1::after {
     content: "";
     position: absolute;
     width: 235px;
@@ -96,7 +96,7 @@ span {
 }
 
 
-.button {
+.contact-button {
     border-radius: 2px;
     border: 2px solid #00000050;
     margin-top: 150px;
@@ -112,12 +112,12 @@ span {
     letter-spacing: 2.16px;
 }
 
-.button:hover {
+.contact-button:hover {
     box-shadow: 0px 0px 15px gray;
     cursor: pointer;
 }
 
-.button button {
+.contact-button button {
     cursor: pointer;
     outline: none;
     border: none;
@@ -138,7 +138,7 @@ span {
     margin-bottom: 130px;
 }
 
-.glass__juice {
+.glass__img_juice {
     position: relative;
     left: 80px;
     top: -15px;
@@ -152,7 +152,7 @@ span {
     background-color: #f8fafa;
 }
 
-.about-us-title {
+.about-us .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,7 +160,7 @@ span {
     margin-top: 130px;
 }
 
-.about-us-title h2 {
+.about-us .title h2 {
     opacity: 0.9;
     color: #000000;
     font-family: Montserrat;
@@ -172,7 +172,7 @@ span {
     margin: 0;
 }
 
-.about-us-title p {
+.about-us .title p {
     opacity: 0.62;
     color: #000000;
     font-family: Merriweather;
@@ -186,7 +186,7 @@ span {
     text-align: center;
 }
 
-.about-us-info {
+.about-us .info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -195,21 +195,21 @@ span {
     margin-top: 150px;
 }
 
-.about-us-info-img img {
+.about-us .info .img img {
     box-shadow: 0px 0px 15px gray;
 }
 
-.about-us-info-text {
+.about-us .info .text {
     display: flex;
     flex-direction: column;
     margin: auto 15px;
 }
 
-.about-us-info-text div {
+.about-us .info .text div {
     max-width: 500px;
 }
 
-.about-us-info-text div>h3 {
+.about-us .info .text div>h3 {
     opacity: 0.75;
     color: #000000;
     font-family: Merriweather;
@@ -220,7 +220,7 @@ span {
     letter-spacing: 1.2px;
 }
 
-.about-us-info-text div>p {
+.about-us .info .text div>p {
     opacity: 0.74;
     color: #000000;
     font-family: Raleway;
@@ -237,7 +237,7 @@ span {
     flex-direction: column;
 }
 
-.featured-works-title {
+.featured-works .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -245,7 +245,7 @@ span {
     margin-top: 130px;
 }
 
-.featured-works-title h2 {
+.featured-works .title h2 {
     opacity: 0.9;
     color: #000000;
     font-family: Montserrat;
@@ -257,7 +257,7 @@ span {
     margin: 0;
 }
 
-.featured-works-title p {
+.featured-works .title p {
     opacity: 0.62;
     color: #000000;
     font-family: Merriweather;
@@ -271,7 +271,7 @@ span {
     text-align: center;
 }
 
-.featured-works-gallery {
+.featured-works .gallery {
     display: flex;
     flex-wrap: wrap;
     margin-top: 125px;
@@ -280,13 +280,13 @@ span {
     margin-bottom: 125px;
 }
 
-.featured-works-gallery img {
+.featured-works .gallery img {
     margin-right: 15px;
     margin-bottom: 15px;
     transition: .3s;
 }
 
-.featured-works-gallery img:hover {
+.featured-works .gallery img:hover {
     box-shadow: 0px 0px 15px gray;
 }
 
@@ -314,7 +314,7 @@ span {
     flex-direction: column;
 }
 
-.small-team-title {
+.small-team .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -322,7 +322,7 @@ span {
     margin-top: 130px;
 }
 
-.small-team-title h2 {
+.small-team .title h2 {
     opacity: 0.9;
     color: #000000;
     font-family: Montserrat;
@@ -334,7 +334,7 @@ span {
     margin: 0;
 }
 
-.small-team-title p {
+.small-team .title p {
     opacity: 0.62;
     color: #000000;
     font-family: Merriweather;
@@ -348,7 +348,7 @@ span {
     text-align: center;
 }
 
-.small-team-employees {
+.small-team .employees {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -357,45 +357,20 @@ span {
     margin-bottom: 175px;
 }
 
-.small-team-employees img {
+.small-team .employees img {
     margin-right: 15px;
     margin-bottom: 15px;
 }
 
-.small-team-employees__employee-1,
-.small-team-employees__employee-2,
-.small-team-employees__employee-3,
-.small-team-employees__employee-4,
-.small-team-employees__employee-5,
-.small-team-employees__employee-6 {
+.small-team .employees .employee {
     position: relative;
 }
 
-.small-team-employees__employee-1:hover .small-team-employees__employee-info {
+.employee:hover .info {
     opacity: 1;
 }
 
-.small-team-employees__employee-2:hover .small-team-employees__employee-info {
-    opacity: 1;
-}
-
-.small-team-employees__employee-3:hover .small-team-employees__employee-info {
-    opacity: 1;
-}
-
-.small-team-employees__employee-4:hover .small-team-employees__employee-info {
-    opacity: 1;
-}
-
-.small-team-employees__employee-5:hover .small-team-employees__employee-info {
-    opacity: 1;
-}
-
-.small-team-employees__employee-6:hover .small-team-employees__employee-info {
-    opacity: 1;
-}
-
-.small-team-employees__employee-info {
+.employee .info {
     position: absolute;
     top: 40%;
     left: 5%;
@@ -410,7 +385,7 @@ span {
     transition: .3s;
 }
 
-.small-team-employees__employee-info::before {
+.small-team .employees .employee .info::before {
     position: absolute;
     content: "";
     border: 10px solid transparent;
@@ -418,7 +393,7 @@ span {
     top: -35px;
 }
 
-.small-team-employees__employee-info h4 {
+.small-team .employees .employee .info h4 {
     color: #272727;
     font-family: "Merriweather - Bold";
     font-size: 20px;
@@ -426,14 +401,14 @@ span {
     letter-spacing: 1px;
 }
 
-.small-team-employees__employee-info h4>span {
+.small-team .employees .employee .info h4>span {
     font-family: "Merriweather - Regular";
     font-weight: 400;
     letter-spacing: 0.45px;
     text-shadow: none;
 }
 
-.small-team-employees__employee-info p {
+.small-team .employees .employee .info p {
     width: 239px;
     height: 64px;
     opacity: 0.8;
@@ -447,17 +422,17 @@ span {
     margin-bottom: 20px;
 }
 
-.employee-social-media {
+.employee .social-media {
     font-size: small;
 }
 
-.employee-social-media a {
+.employee .social-media a {
     margin-right: 5px;
     cursor: pointer;
     transition: .2s;
 }
 
-.employee-social-media a:hover {
+.employee .social-media a:hover {
     text-shadow: black 0px 0px 5px;
 }
 
@@ -484,7 +459,7 @@ span {
     background-repeat: no-repeat;
 }
 
-.contacts-form {
+.contacts .form {
     max-width: 615px;
     width: 100%;
     box-shadow: 0 0 30px rgba(21, 21, 21, 0.12);
@@ -497,15 +472,15 @@ span {
     font-weight: 400;
     line-height: 51px;
 }
-.contacts-form h3 {
+.contacts .form h3 {
     display: none;
 }
-.contacts-form form {
+.contacts .form form {
     padding: 30px;
     background-color: rgba(2, 22, 35, 0.71);
 }
 
-.contacts-form input {
+.contacts .form input {
     border: none;
     outline: none;
     border-bottom: #000000 solid 1px;
@@ -515,7 +490,7 @@ span {
     padding-bottom: 15px;
 }
 
-.contacts-form input[type="submit"] {
+.contacts .form input[type="submit"] {
     max-width: 250px;
     width: 100%;
     height: 53px;
@@ -531,11 +506,11 @@ span {
     transition: .3s;
 }
 
-.contacts-form input[type="submit"]:hover {
+.contacts .form input[type="submit"]:hover {
     box-shadow: 0px 0px 15px white
 }
 
-.contacts-form textarea {
+.contacts .form textarea {
     border: none;
     border-bottom: #000000 solid 1px;
     background-color: rgba(2, 22, 35, 0);
@@ -544,13 +519,13 @@ span {
     outline: none;
 }
 
-.contacts-form__feedback {
+.contacts-form {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
-.contacts-map {
+.contacts .map {
     max-width: 500px;
     margin-top: 120px;
     width: 100%;
@@ -559,12 +534,12 @@ span {
     margin-bottom: 150px;
 }
 
-.contacts-map__adress {
+.contacts .map .adresses{
     padding: 0 30px;
     margin-top: 35px;
 }
 
-.contacts-map__adress p {
+.contacts .map .adresses p {
     opacity: 0.7;
     color: #ffffff;
     font-family: Raleway;
@@ -573,7 +548,7 @@ span {
     line-height: 24px;
 }
 
-.contacts-map__yandex-map {
+.contacts .map .yandex-map {
     max-width: 455px;
     width: 100%;
     height: 224px;
@@ -594,7 +569,7 @@ footer {
     align-items: center;
 }
 
-.follow-us p {
+footer .title p {
     opacity: 0.8;
     color: #ffffff;
     font-family: Raleway;
@@ -605,11 +580,13 @@ footer {
     letter-spacing: 0.16px;
 }
 
-.social-media a {
+ a {
     cursor: pointer;
+    text-decoration: none;
+    color: #000 !important;
 }
 
-.social-media i {
+footer .social-media i {
     width: 40px;
     height: 40px;
     background-color: #8d8d8d;
@@ -620,7 +597,7 @@ footer {
     transition: .3s;
 }
 
-.social-media i:hover {
+footer .social-media i:hover {
     background-color: #71f6eb;
     opacity: 1;
 }
@@ -637,12 +614,12 @@ footer {
         margin-left: 0 !important;
     }
 
-    .title-row h1::before {
+    .title h1::before {
         right: 100px;
 
     }
 
-    .title-row h1::after {
+    .title h1::after {
         left: 50px;
         top: 65px;
     }
@@ -655,43 +632,43 @@ footer {
 }
 
 @media (max-width: 647px) {
-    .title-row h1::before {
+    .title h1::before {
         right: 180px;
         top: 60px;
 
     }
 
-    .title-row h1::after {
+    .title h1::after {
         left: 30px;
         top: 120px;
     }
 }
 
 @media (max-width: 570px) {
-    .title-row h1::before {
+    .title h1::before {
         right: 150px;
         top: 60px;
 
     }
 
-    .title-row h1::after {
+    .title h1::after {
         left: 150px;
         top: 120px;
     }
 
-    .contacts-map__yandex-map {
+    .contacts-map .yandex-map {
         max-width: 450px;
     }
 }
 
 @media (max-width: 440px) {
-    .title-row h1::before {
+    .title h1::before {
         right: 90px;
         top: 60px;
 
     }
 
-    .title-row h1::after {
+    .title h1::after {
         left: 100px;
         top: 120px;
     }
@@ -702,13 +679,13 @@ footer {
 }
 
 @media (max-width: 345px) {
-    .title-row h1::before {
+    .title h1::before {
         right: 35px;
         top: 120px;
 
     }
 
-    .title-row h1::after {
+    .title h1::after {
         left: 50px;
         top: 180px;
     }
